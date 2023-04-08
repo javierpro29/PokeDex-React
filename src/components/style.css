@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    /* background-color: #FCEEC8; */
+    background-image: url("../../public/images/land.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.container{
+    width: 90%;
+    margin: auto;
+    padding-top: 100px;
+    display: flex;
+}
+
+
+.left-content,.right-content{
+    flex-basis: 50%;
+}
+
+.left-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,0.5fr));
+    grid-gap:4.5rem;
+}
+.card{
+    width: 300px;
+    background-color:#9EDEF9;
+    border-radius: 1rem;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.5);
+    padding: 0 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.right-content{
+    width: 50%;
+    text-align: center;
+    color: black;
+    position: fixed;
+    top:100px;
+    right: 10px;
+}
+
+
+.right-content img{
+    margin: 1.5rem;
+    height: 160px;
+}
+
+.right-content h1{
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #e1475b;
+    font-size: 2rem;
+    text-shadow: 0px 0px 15px #000 ;
+}
+.abilities{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+.abilities .group{
+    background-color: #b74555;
+    color: white;
+    padding: 0.5rem;
+    font-size: 12px;
+    border-radius: 8px;
+    margin-left: 1rem;
+}
+
+
+.base-stat{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.ability{
+    background-color: #2c8300;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 8px;
+    margin-left: 1rem;
+    margin-bottom: 5px;
+    width: 40%;
+}
+
+.btn-group{
+    display: flex;
+}
+.btn-group button{
+    outline: none;
+    border: none;
+    width: 150px;
+    padding: 0.3rem 0;
+    margin: 1rem;
+    font-size: 17px;
+    font-weight: bold;
+    color: white;
+    background-color: #b74555;
+    border-radius: 8px;
+}
+
+
+
+@media screen and (max-width: 800px){
+   
+    .container{
+        width: 100%;
+        display: block;
+    }
+    
+    .left-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 60px;
+    }
+
+    .card{
+        margin-bottom: 15px;
+    }
+    
+    .right-content{
+        width: 100%;
+        color: #32821b;
+        position: inherit;
+    }
+
+    .right-content img{
+        margin: 0;
+        height: 130px;
+    }
+
+    .pokeinfo-container{
+        display: flex;
+        margin-bottom: 20px;
+        justify-content: center;
+
+    }
+
+    .pokeinfo-left{
+        margin-right: 15px;
+    }
+
+    .base-stat{
+        margin-top: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ability{
+        color: white;
+        margin-left: 1rem;
+        margin-bottom: 5px;
+        width: 100%;
+    }
+
+}

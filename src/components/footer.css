@@ -1,0 +1,73 @@
+.footer {
+    background-color: #23262e;
+    color: #fff;
+    margin-top: 100px;
+    position: absolute;
+    width: 100%;
+    padding-top: 20px;
+}
+
+.gitHub{
+    text-align: center;
+    font-size: 30px;
+    width: 80%;
+    margin: auto;
+    border-bottom: 1px solid #fff;
+}
+
+.gitHub-Logo{
+    font-size: 80px;
+    vertical-align: -30px;
+}
+
+.gitHub a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+    height: 80px;
+}
+
+.gitHub-Logo:hover, .gitHub a:hover{
+    color: #ff0000;
+}
+
+
+.download{
+    text-align: center;
+    font-size: 30px;
+    width: 80%;
+    margin: auto;
+    border-bottom: 1px solid #fff;
+    padding: 10px;
+}
+
+.download button{
+    border-radius: 8px;
+    background-color: #23262e;
+    border: 1px solid #fff;
+    padding: 5px 20px;
+}
+
+.download-Logo{
+    font-size: 25px;
+    margin-right: 5px;
+    vertical-align: -5px;
+}
+
+.download a{
+    text-decoration: none;
+    color: #fff;
+    height: 80px;
+    padding: 5px;
+}
+
+
+.download button:hover{
+    background-color: #ff0000;
+}
+
+.right{
+    text-align: center;
+    padding: 20px;
+}
+  
